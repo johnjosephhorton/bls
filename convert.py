@@ -1,6 +1,19 @@
 import pandas as pd
 
-filename = "cepr_org_2013.dta"
+from os import walk
+import os.path
 
-data = pd.io.stata.read_stata(filename)
-data.to_csv('cepr_org_2013.csv')
+path = "data/"
+
+f = []
+for (dirpath, dirnames, filenames) in walk(path):
+    for file in filenames:
+        (fname, ext) = os.path.splitext(file)
+        if ext == ".dta":
+            input_file = os.path.join(dirpath, file)
+            data = pd.io.stata.read_stata(input_file)
+
+            output_file = os.path.join(dirpath, '.'.join([fname, "csv"]))
+            data.to_csv(output_file)
+            print(fname, " - done.")
+    break
