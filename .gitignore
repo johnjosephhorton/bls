@@ -3,3 +3,8 @@
 .RData
 report.tex
 report-concordance.tex
+
+# no data csv, dta (STATA) or tde (Tableau) in a repository
+*.csv
+*.dta
+*.tde
