@@ -1,3 +1,4 @@
+library(data.table)
 library(foreign)
 library(dplyr)
 library(reshape2)
@@ -10,7 +11,7 @@ options(digits = 4)
 source("helpers.R")
 
 if(!exists("data2013")) {
-  source("load.and.filter.R")
+  data2013 <- fread("data/cepr_org_2013.csv", data.table = TRUE)
 }
 
 obs.total <- length(data2013$age)
