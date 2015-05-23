@@ -1,5 +1,4 @@
 library(data.table)
-library(foreign)
 library(dplyr)
 library(reshape2)
 library(tidyr)
@@ -11,8 +10,11 @@ options(digits = 4)
 source("helpers.R")
 
 if(!exists("data2013")) {
-  data2013 <- fread("data/cepr_org_2013.csv", data.table = TRUE)
+  data2013 <- fread("data/cepr_org_2013.csv", colClasses=c("hhid"="character", "hhid2"="character"))
 }
+
+data2012 <- fread("data/cepr_org_2012.csv", colClasses=c("hhid"="character", "hhid2"="character"))
+data2013 <- fread("data/cepr_org_2013.csv", colClasses=c("hhid"="character", "hhid2"="character"))
 
 obs.total <- length(data2013$age)
 # length(data2013$empl[data2012$empl])
