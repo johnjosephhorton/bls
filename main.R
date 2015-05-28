@@ -6,15 +6,26 @@ library(ggplot2)
 options(na.action = na.omit)
 options(digits = 4)
 
-if(!exists("data2012")) {
-  data2012 <- fread("data/cepr_org_2012.csv", colClasses=c("hhid"="character", "hhid2"="character"))
-}
+csv.files <- list.files("data/", pattern="*.csv", full.names = TRUE)
 
-if(!exists("data2013")) {
-  data2013 <- fread("data/cepr_org_2013.csv", colClasses=c("hhid"="character", "hhid2"="character"))
-}
+data <- data.table()
 
-# summarise of empl, unem, selfemp, selfinc based on educ (Education) and wbho (Race)
-educ.wbho.summ <- group_by(data2012, wbho, educ) %>%
-  summarise(mean.age=mean(age), empl=100*sum(empl, na.rm=T)/n(), selfemp=100*sum(selfemp, na.rm=T)/n(), selfinc=100*sum(selfinc, na.rm=T)/n(), unem=100*sum(unem, na.rm=T)/n(), earn) %>%
+# data.list <- lapply(csv.files, fread)
+data.list <- sapply(tail(csv.files, 4), function(f) { fread(f, colClasses=c("hhid"="character", "hhid2"="character")) }, simplify = FALSE, USE.NAMES = TRUE)
+data <- rbindlist(data.list)
+
+memory.limit(16000)
+rm(data.list)
+
+data <- data[data$age > 25 & data$age < 55, ]
+
+tmp <- group_by(data, year, wbho, educ) %>%
+  summarise(mean.age=mean(age), empl=100*sum(empl, na.rm=T)/n(), selfemp=100*sum(selfemp, na.rm=T)/n(), selfinc=100*sum(selfinc, na.rm=T)/n(), unem=100*sum(unem, na.rm=T)/n(), earn=mean(w_ln_no, na.rm=T)) %>%
   arrange(wbho, educ)
+
+tmp.long <- melt(tmp, id.vars = c("year", "wbho", "educ"), measure.vars = c("earn"))
+
+ggplot(data=tmp.long, aes(x=year, y=value, fill=variable, color=wbho)) +
+  theme_bw() +
+  geom_line() +
+  facet_grid(. ~ educ)
