@@ -6,9 +6,6 @@ library(ggplot2)
 options(na.action = na.omit)
 options(digits = 4)
 
-# load necessary functions
-source("helpers.R")
-
 if(!exists("data2012")) {
   data2012 <- fread("data/cepr_org_2012.csv", colClasses=c("hhid"="character", "hhid2"="character"))
 }
