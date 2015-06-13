@@ -7,7 +7,7 @@ library(stargazer)
 options(na.action = na.omit)
 options(digits = 4)
 
-csv.files <- list.files("data/", pattern="*.csv", full.names = TRUE)
+csv.files <- list.files("data/", pattern="cepr_org_[[:digit:]]{4}\\.csv", full.names = TRUE)
 
 data <- data.table()
 
@@ -26,7 +26,10 @@ tmp <- data %>% group_by(year, wbho, educ) %>%
 
 tmp <- tmp[educ != ""]
 
-tmp.long <- melt(tmp, id.vars = c("year", "wbho", "educ"), measure.vars = c("earn"))
+source("inflation.R")
+tmp <- tmp %>% inner_join(cf, by = "year", copy = T) %>% mutate(infl.earn = earn / CPIAUCSL)
+
+tmp.long <- melt(tmp, id.vars = c("year", "wbho", "educ"), measure.vars = c("infl.earn"))
 
 ggplot(data=tmp.long, aes(x=year, y=value, fill=variable, color=wbho)) +
   theme_bw() +
