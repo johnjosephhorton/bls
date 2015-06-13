@@ -36,11 +36,12 @@ ggplot(data=tmp.long, aes(x=year, y=value, fill=variable, color=wbho)) +
   geom_line() +
   facet_grid(. ~ educ)
 
-reg <- lm(w_ln_no ~ wbho + educ + marstat + prcitshp + state, data=data[year == 2013])
-stargazer(reg, type = "text", out = "output/regressions/earn_multiple_regression_2013.md")
-
-test <- lm(earn ~ wbho + educ, data=tmp[year == 2013])
-stargazer(test, type = "text", out = "output/regressions/mean_earn_educ_race_2013.md")
-
-reg.educ <- lm(earn ~ educ, data=tmp[year == 2013])
-stargazer(reg.educ, type = "text", out = "output/regressions/mean_earn_educ_2013.md")
+for(i in 2013:1991) {
+  reg <- lm(w_ln_no ~ wbho + educ + marstat + prcitshp + state, data=data[year == i])
+  reg_name <- paste0("output/regressions/earn_multiple_regression_", i, ".md")
+  stargazer(reg, type = "text", out = reg_name)
+  
+  reg.educ <- lm(earn ~ educ, data=tmp[year == i])
+  reg.educ_name <- paste0("output/regressions/mean_earn_educ_", i, ".md")
+  stargazer(reg.educ, type = "text", out = reg.educ_name)
+}
