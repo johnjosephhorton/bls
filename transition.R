@@ -15,10 +15,12 @@ merged.data <- rbind(sub.data2012, sub.data2013)
 merged.data <- merged.data[complete.cases(merged.data), ]
 
 merged.data <- merged.data[duplicated(merged.data$hh) | duplicated(merged.data$hh, fromLast = T), ]
+merged.data <- merged.data[merged.data$age > 25 & merged.data$age < 55, ]
 
-compare.work <- function(prev, curr) {
-  switch()
-}
+# res <- data.frame(t(apply(merged.data[-1], 1, function(x) names(merged.data[-1])[x != 0])))
+# dcast(res, X1 ~ X2)
 
-res <- data.frame(t(apply(merged.data[-1], 1, function(x) names(merged.data[-1])[x != 0])))
-dcast(res, X1 ~ X2)
+merged.data[merged.data$selfemp == 1 & merged.data$unem == 1, ]$unem <- 0
+merged.data[merged.data$selfinc == 1 & merged.data$unem == 1, ]$unem <- 0
+merged.data[merged.data$selfinc == 1 & merged.data$empl == 1, ]$empl <- 0
+merged.data[merged.data$selfemp == 1 & merged.data$empl == 1, ]$empl <- 0
