@@ -1,8 +1,0 @@
-\documentclass{article}
-
-\begin{document}
-\SweaveOpts{concordance=TRUE}
-
-\section*{Summary Statistics of Salaried and Self-Employed Workers}
-
-\end{document}
