@@ -4,26 +4,26 @@
                     ---------------------------
                                earn            
 -----------------------------------------------
-educCollege                  -7.183***         
-                              (1.341)          
+educCollege                  -7.268***         
+                              (1.069)          
                                                
-educHS                      -17.950***         
-                              (1.341)          
+educHS                      -17.320***         
+                              (1.069)          
                                                
-educLTHS                    -21.480***         
-                              (1.341)          
+educLTHS                    -20.960***         
+                              (1.069)          
                                                
-educSome college            -15.460***         
-                              (1.341)          
+educSome college            -15.130***         
+                              (1.069)          
                                                
-Constant                     33.400***         
-                              (0.948)          
+Constant                     32.880***         
+                              (0.756)          
                                                
 -----------------------------------------------
-Observations                    20             
-R2                             0.957           
-Adjusted R2                    0.946           
-Residual Std. Error       1.897 (df = 15)      
-F Statistic           84.410*** (df = 4; 15)   
+Observations                    30             
+R2                             0.952           
+Adjusted R2                    0.945           
+Residual Std. Error       1.851 (df = 25)      
+F Statistic           124.600*** (df = 4; 25)  
 ===============================================
 Note:               *p<0.1; **p<0.05; ***p<0.01

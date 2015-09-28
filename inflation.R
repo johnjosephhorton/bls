@@ -15,4 +15,4 @@ rownames(cf) <- NULL
 cf$year <- year(as.Date(cf$year))
 # end of inflation data get
 
-rm(CPIAUCSL)
+# rm(CPIAUCSL)

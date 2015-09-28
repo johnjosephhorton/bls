@@ -4,209 +4,215 @@
                                   ----------------------------
                                             w_ln_no           
 --------------------------------------------------------------
-wbhoHispanic                                 0.194            
-                                            (0.240)           
+wbhaomBlack                                -2.753***          
+                                            (0.299)           
                                                               
-wbhoOther                                   2.459***          
-                                            (0.270)           
+wbhaomHispanic                             -2.477***          
+                                            (0.268)           
                                                               
-wbhoWhite                                   3.396***          
-                                            (0.182)           
-                                                              
-educCollege                                -6.637***          
-                                            (0.171)           
-                                                              
-educHS                                     -17.620***         
-                                            (0.171)           
-                                                              
-educLTHS                                   -20.560***         
-                                            (0.262)           
-                                                              
-educSome college                           -15.600***         
-                                            (0.170)           
-                                                              
-marstatMarried                              1.418***          
-                                            (0.162)           
-                                                              
-marstatNever Married                       -2.635***          
-                                            (0.182)           
-                                                              
-marstatSeparated                           -1.018***          
-                                            (0.348)           
-                                                              
-marstatWidowed                             -1.830***          
-                                            (0.559)           
-                                                              
-prcitshpBorn in US                          1.752**           
-                                            (0.744)           
-                                                              
-prcitshpForeign born                         -0.690           
-                                            (0.751)           
-                                                              
-prcitshpForeign born, naturalized            1.258*           
-                                            (0.758)           
-                                                              
-prcitshpForeign born, US parents            2.326***          
-                                            (0.888)           
-                                                              
-stateAL                                    -3.004***          
-                                            (0.680)           
-                                                              
-stateAR                                    -4.293***          
-                                            (0.666)           
-                                                              
-stateAZ                                    -1.754***          
-                                            (0.657)           
-                                                              
-stateCA                                     2.159***          
-                                            (0.491)           
-                                                              
-stateCO                                      -0.118           
-                                            (0.562)           
-                                                              
-stateCT                                     2.269***          
-                                            (0.565)           
-                                                              
-stateDC                                     5.827***          
-                                            (0.603)           
-                                                              
-stateDE                                     -1.407**          
-                                            (0.612)           
-                                                              
-stateFL                                    -1.378***          
-                                            (0.527)           
-                                                              
-stateGA                                    -1.701***          
-                                            (0.572)           
-                                                              
-stateHI                                     -1.100*           
-                                            (0.626)           
-                                                              
-stateIA                                    -3.770***          
-                                            (0.579)           
-                                                              
-stateID                                    -3.635***          
-                                            (0.667)           
-                                                              
-stateIL                                      -0.575           
-                                            (0.535)           
-                                                              
-stateIN                                    -3.276***          
-                                            (0.610)           
-                                                              
-stateKS                                    -4.178***          
-                                            (0.619)           
-                                                              
-stateKY                                    -5.297***          
-                                            (0.618)           
-                                                              
-stateLA                                    -3.782***          
-                                            (0.707)           
-                                                              
-stateMA                                     1.805***          
-                                            (0.607)           
-                                                              
-stateMD                                     1.878***          
-                                            (0.554)           
-                                                              
-stateME                                    -3.719***          
-                                            (0.600)           
-                                                              
-stateMI                                    -2.440***          
-                                            (0.567)           
-                                                              
-stateMN                                     -1.282**          
-                                            (0.548)           
-                                                              
-stateMO                                    -3.004***          
-                                            (0.600)           
-                                                              
-stateMS                                    -3.800***          
-                                            (0.716)           
-                                                              
-stateMT                                    -4.335***          
-                                            (0.726)           
-                                                              
-stateNC                                    -2.319***          
-                                            (0.581)           
-                                                              
-stateND                                    -3.496***          
-                                            (0.628)           
-                                                              
-stateNE                                    -3.938***          
-                                            (0.599)           
-                                                              
-stateNH                                     -1.138**          
-                                            (0.566)           
-                                                              
-stateNJ                                     3.784***          
-                                            (0.572)           
-                                                              
-stateNM                                     -1.839**          
-                                            (0.739)           
-                                                              
-stateNV                                    -1.831***          
-                                            (0.614)           
-                                                              
-stateNY                                      0.192            
-                                            (0.518)           
-                                                              
-stateOH                                    -2.568***          
-                                            (0.552)           
-                                                              
-stateOK                                    -3.609***          
-                                            (0.660)           
-                                                              
-stateOR                                    -1.690***          
-                                            (0.626)           
-                                                              
-statePA                                     -1.095**          
-                                            (0.540)           
-                                                              
-stateRI                                      -0.755           
-                                            (0.603)           
-                                                              
-stateSC                                    -4.316***          
-                                            (0.643)           
-                                                              
-stateSD                                    -4.854***          
-                                            (0.615)           
-                                                              
-stateTN                                    -5.006***          
-                                            (0.635)           
-                                                              
-stateTX                                      -0.661           
+wbhaomMixed                                  -0.570           
                                             (0.506)           
                                                               
-stateUT                                    -2.619***          
-                                            (0.638)           
+wbhaomNative American                      -1.695***          
+                                            (0.643)           
                                                               
-stateVA                                      0.912            
-                                            (0.562)           
+wbhaomWhite                                 0.679***          
+                                            (0.259)           
                                                               
-stateVT                                    -4.013***          
-                                            (0.613)           
+educCollege                                -6.634***          
+                                            (0.171)           
                                                               
-stateWA                                      0.405            
-                                            (0.592)           
+educHS                                     -17.600***         
+                                            (0.172)           
                                                               
-stateWI                                    -3.055***          
-                                            (0.575)           
+educLTHS                                   -20.520***         
+                                            (0.262)           
                                                               
-stateWV                                    -3.591***          
-                                            (0.690)           
+educSome college                           -15.590***         
+                                            (0.170)           
                                                               
-stateWY                                    -2.198***          
+marstatMarried                              1.414***          
+                                            (0.162)           
+                                                              
+marstatNever Married                       -2.639***          
+                                            (0.182)           
+                                                              
+marstatSeparated                           -1.007***          
+                                            (0.348)           
+                                                              
+marstatWidowed                             -1.828***          
+                                            (0.559)           
+                                                              
+prcitshpBorn in US                          1.805**           
+                                            (0.744)           
+                                                              
+prcitshpForeign born                         -0.719           
+                                            (0.751)           
+                                                              
+prcitshpForeign born, naturalized            1.219            
+                                            (0.759)           
+                                                              
+prcitshpForeign born, US parents            2.315***          
+                                            (0.888)           
+                                                              
+stateAL                                    -3.071***          
+                                            (0.680)           
+                                                              
+stateAR                                    -4.370***          
+                                            (0.667)           
+                                                              
+stateAZ                                    -1.822***          
+                                            (0.657)           
+                                                              
+stateCA                                     2.048***          
+                                            (0.492)           
+                                                              
+stateCO                                      -0.213           
+                                            (0.563)           
+                                                              
+stateCT                                     2.183***          
+                                            (0.566)           
+                                                              
+stateDC                                     5.757***          
+                                            (0.604)           
+                                                              
+stateDE                                     -1.495**          
+                                            (0.612)           
+                                                              
+stateFL                                    -1.455***          
+                                            (0.528)           
+                                                              
+stateGA                                    -1.776***          
+                                            (0.573)           
+                                                              
+stateHI                                     -1.299**          
+                                            (0.631)           
+                                                              
+stateIA                                    -3.857***          
+                                            (0.580)           
+                                                              
+stateID                                    -3.708***          
+                                            (0.668)           
+                                                              
+stateIL                                      -0.664           
+                                            (0.536)           
+                                                              
+stateIN                                    -3.360***          
+                                            (0.611)           
+                                                              
+stateKS                                    -4.252***          
+                                            (0.619)           
+                                                              
+stateKY                                    -5.381***          
+                                            (0.619)           
+                                                              
+stateLA                                    -3.857***          
+                                            (0.708)           
+                                                              
+stateMA                                     1.716***          
+                                            (0.607)           
+                                                              
+stateMD                                     1.797***          
+                                            (0.555)           
+                                                              
+stateME                                    -3.799***          
+                                            (0.601)           
+                                                              
+stateMI                                    -2.526***          
+                                            (0.568)           
+                                                              
+stateMN                                     -1.371**          
+                                            (0.549)           
+                                                              
+stateMO                                    -3.089***          
+                                            (0.600)           
+                                                              
+stateMS                                    -3.875***          
+                                            (0.716)           
+                                                              
+stateMT                                    -4.357***          
+                                            (0.726)           
+                                                              
+stateNC                                    -2.378***          
+                                            (0.582)           
+                                                              
+stateND                                    -3.488***          
+                                            (0.628)           
+                                                              
+stateNE                                    -4.011***          
+                                            (0.600)           
+                                                              
+stateNH                                     -1.217**          
+                                            (0.567)           
+                                                              
+stateNJ                                     3.693***          
+                                            (0.573)           
+                                                              
+stateNM                                     -1.837**          
+                                            (0.739)           
+                                                              
+stateNV                                    -1.929***          
+                                            (0.615)           
+                                                              
+stateNY                                      0.104            
+                                            (0.519)           
+                                                              
+stateOH                                    -2.658***          
+                                            (0.553)           
+                                                              
+stateOK                                    -3.591***          
+                                            (0.660)           
+                                                              
+stateOR                                    -1.759***          
                                             (0.626)           
                                                               
-Constant                                   31.790***          
-                                            (0.909)           
+statePA                                     -1.182**          
+                                            (0.541)           
+                                                              
+stateRI                                      -0.842           
+                                            (0.604)           
+                                                              
+stateSC                                    -4.398***          
+                                            (0.643)           
+                                                              
+stateSD                                    -4.874***          
+                                            (0.615)           
+                                                              
+stateTN                                    -5.083***          
+                                            (0.636)           
+                                                              
+stateTX                                      -0.759           
+                                            (0.507)           
+                                                              
+stateUT                                    -2.693***          
+                                            (0.639)           
+                                                              
+stateVA                                      0.825            
+                                            (0.563)           
+                                                              
+stateVT                                    -4.092***          
+                                            (0.614)           
+                                                              
+stateWA                                      0.313            
+                                            (0.593)           
+                                                              
+stateWI                                    -3.125***          
+                                            (0.576)           
+                                                              
+stateWV                                    -3.673***          
+                                            (0.691)           
+                                                              
+stateWY                                    -2.270***          
+                                            (0.626)           
+                                                              
+Constant                                   34.530***          
+                                            (0.908)           
                                                               
 --------------------------------------------------------------
 Observations                                106,941           
 R2                                           0.186            
 Adjusted R2                                  0.186            
-Residual Std. Error                   16.390 (df = 106875)    
-F Statistic                       376.800*** (df = 65; 106875)
+Residual Std. Error                   16.390 (df = 106873)    
+F Statistic                       365.700*** (df = 67; 106873)
 ==============================================================
 Note:                              *p<0.1; **p<0.05; ***p<0.01

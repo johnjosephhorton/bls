@@ -1,3 +1,7 @@
+library(data.table)
+library(reshape2)
+library(dplyr)
+
 empl.empl <- 0
 empl.unem <- 0
 empl.selfemp <- 0
@@ -88,4 +92,4 @@ transition <- matrix(c(empl.empl, empl.unem, empl.selfemp, empl.selfinc,
 start.total <- unlist(lapply(c("empl", "unem", "selfemp", "selfinc"), function(x) nrow(merged.data[year == 2012 & merged.data[[x]] == 1, ])))
 start.total <- c(empl.total, unem.total, selfemp.total, selfinc.total)
 
-apply(t(transition), 1, "/", start.total)
+transition.from.to <- 100 * apply(t(transition), 1, "/", start.total)

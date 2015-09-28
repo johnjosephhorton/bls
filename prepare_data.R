@@ -1,4 +1,4 @@
-library("rvest")
+library(rvest)
 
 data_url <- "http://ceprdata.org/cps-uniform-data-extracts/cps-outgoing-rotation-group/cps-org-data/"
 html <- html(data_url)
