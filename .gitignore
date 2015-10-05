@@ -11,3 +11,4 @@ report-concordance.tex
 
 # PyCharm config ignore
 .idea/
+.settings/
